@@ -1,0 +1,17 @@
+{
+    "name": "faustingarreau/lyon-eval-s2",
+    "authors": [
+        {
+            "name": "FaustinGarreau",
+            "email": "fgarreau@edenschool.fr"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Portfolio\\": "src/"
+        }
+    }
+
+}

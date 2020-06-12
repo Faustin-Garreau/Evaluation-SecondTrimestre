@@ -1,0 +1,633 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #1f1f1e;
+}
+
+header {
+    padding-bottom: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p {
+    color: #fed136;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 16px 14px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.moi {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.button_me {
+    display: block;
+    margin : auto;
+    background-color:#fed136;
+    border: none;
+    color: black;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    border: 2px solid #fed136;
+}
+
+.input_image {
+    background: transparent;
+    font-size: 20px;
+    border: none;
+}
+
+.button_image {
+    border-radius: 100%;
+    height: 57px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+.update_image {
+    display: flex;
+    justify-content: center;
+}
+
+#images {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button_me:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.input {
+    transition: border 0.2s ease-in-out;
+    min-width: 280px
+}
+
+.input:focus+.label,
+.input:active+.label,
+.input.filled+.label {
+    font-size: .75rem;
+    transition: all 0.2s ease-out;
+    top: -0.1rem;
+    color: #667eea;
+}
+
+.label {
+    transition: all 0.2s ease-out;
+    top: 0.4rem;
+    left: 0;
+}
+
+main {
+    padding: 0px 100px 0px 100px;
+    color: white;
+    margin-top: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#more {
+    text-align: center;
+    font-size: 40px;
+}
+
+.trait {
+    width: 10%;
+}
+
+#comp {
+    color: white;
+}
+
+.compétences{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 100px;
+}
+
+#proj {
+    color: white;
+}
+
+.project {
+    color: white;
+    font-size: 40px;
+}
+
+.project:link, .project:visited {
+    background-color: #fed136;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fed136;
+}
+
+.project:hover, .project:active {
+    color: white;
+    background-color: transparent;
+}
+
+.form_comp {
+    display: flex;
+    justify-content: center;
+}
+
+.comp {
+    display: flex;
+    text-align: center;
+}
+
+.form_comp {
+    margin-bottom: 50px;
+}
+
+.form_proj {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    display: flex;
+    border: none;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+#projets {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projet {
+    margin-top: 50px;
+}
+
+.delete {
+    border-radius: 100%;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.errors {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.contact {
+    color: white;
+}
+
+#form_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.email {
+		border: 1px solid fade(white, 40%);
+		background-color: fade(white, 20%);
+		width: 450px;
+		border-radius: 3px;
+		padding: 10px 15px;
+		display: block;
+		font-size: 18px;
+		color: black;
+}
+
+
+
+.message {
+		border: 1px solid fade(white, 40%);
+		background-color: fade(white, 20%);
+		width: 450px;
+		border-radius: 3px;
+		padding: 10px 15px;
+		display: block;
+		font-size: 18px;
+		color: black;
+}
+
+.send {
+		background-color: white;
+		padding: 10px 15px;
+		border-radius: 3px;
+		width: 250px;
+		cursor: pointer;
+        font-size: 18px;
+}
+
+.contact_errors {
+    color: red;
+    font-size: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    text-align: center; 
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.email_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.login {
+    margin-top: 300px;
+}
+
+i {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.taille_comp {
+    width: 33%;
+}
+
+#email {
+    font-size: 40px;
+    color: #fed136;
+}
+
+#message {
+    font-size: 30px;
+    color: black;
+}
+
+#propos {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    color: #fed136;
+}
+
+#tcheck {
+    color: white;
+    font-size: 60px;
+}
+
+i {
+    margin: 0;
+    padding: 0;
+}
+
+.edit {
+    width: auto;
+    border-radius: 100%;
+    height: 57px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    margin-top: 90px
+}
+
+.comp_input {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    color: white;
+}
+
+#tcheck_comp {
+    color: white;
+    font-size: 60px;
+}
+
+.create_comp {
+    width: auto;
+    border-radius: 100%;
+    height: 57px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+#compétence_affiche {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.edit_comp {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.titre {
+    background: transparent;
+    font-size: 40px;
+    color: white;
+    border: none;
+}
+
+.link {
+    background: transparent;
+    font-size: 40px;
+    color: white;
+    border: none;
+}
+
+.create {
+    width: auto;
+    border-radius: 100%;
+    height: 57px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+
+#circle {
+    font-size: 60px;
+}
+
+.proj_titre {
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+.edit_proj {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete_proj {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.proj_link {
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+#delete_contact {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+#eyes {
+    margin-left: 10px;
+}
+
+#image {
+    display: flex;
+    justify-content: center;
+}
+
+#savoir {
+    margin-top: 20px;
+}
+@media screen and (max-width: 1024px) {
+
+    ul {
+        display: block;
+    }
+
+    li a {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    nav p {
+        font-size: 40px;
+    }
+
+    #moi h2 {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .moi {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    #more {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .taille_comp {
+        width: 50%;
+    }
+
+    .email {
+        width: 200px;
+    }
+
+    .message {
+        width: 200px;
+    }
+
+    .send {
+        width: 200px;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    #tcheck {
+        font-size: 40px;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    #propos {
+        font-size: 30px;
+    }
+
+    .comp_input {
+        font-size: 25px;
+    }
+
+    #theck_comp {
+        font-size: 30px;
+    }
+
+    #comp_ {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .compétences {
+        margin-top: 0;
+        margin-left: 70px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    .titre {
+        font-size: 15px;
+    }
+
+    #circle {
+        font-size: 40px;
+        margin-right: 120px;
+    }
+
+    .form_proj {
+        align-items: center;
+    }
+
+    .projet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projets {
+        display: block;
+    }
+
+    #email {
+        font-size: 30px;
+    }
+}   
